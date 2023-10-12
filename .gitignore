@@ -243,8 +243,8 @@ $RECYCLE.BIN/
 *.lnk
 
 
-#prepros
-prepros.config
+# #prepros
+# prepros.config
 
 
 
