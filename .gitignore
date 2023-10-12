@@ -190,11 +190,11 @@ dist
 .svelte-kit
 
 ### Sass ###
-.sass-cache/
-*.css.map
-*.sass.map
-*.scss.map
-*.scss
+# .sass-cache/
+# *.css.map
+# *.sass.map
+# *.scss.map
+# *.scss
 
 ### VisualStudioCode ###
 .vscode
@@ -242,8 +242,6 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-#pug
-pug
 
 #prepros
 prepros.config

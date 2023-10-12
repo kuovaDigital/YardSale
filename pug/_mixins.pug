@@ -1,0 +1,41 @@
+mixin card(img, price, product, icon)
+	.card
+		.card-wrapper
+			img.card-wrapper-img(src=img alt=description)&attributes(attributes)
+		.card-info-container
+			.card-info
+				.card-info-price.price='$ '+price
+				.card-info-description.h3-body=product
+			.card-addcart
+				span.card-addcart-btn
+
+mixin card-lg(img, price, product , description)
+	.card-container
+		.card-closeBtn
+			span.icon.icon-close
+		.card-img
+			img(src=img alt=description)&attributes(attributes)
+		.card-info
+			.card-info-price.price= '$ ' + price
+			.card-info-product.h3-body= product
+			.card-info-description= description	
+
+		button.addcart-btn.btn.btn-lg(type='button') Add to cart
+			span.icon.icon-addcart-light
+
+mixin card-order(img, articles, price)
+	.card-order-container
+		.card-order-img 
+			img(src=img alt=articles)&attributes(attributes)
+		.card-order-articles
+			p.articles=articles
+		.card-order-price
+			p.price= '$'+ price
+mixin orders(fecha, NoArt, price)
+	.total
+		.total-fr-1
+			.total-fecha=fecha
+			.total-articles=NoArt + " articles"
+		.total-fr-2
+			.total-cost='$'+price
+			span.icon-view

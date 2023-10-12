@@ -1,0 +1,24 @@
+extends _template.pug
+block headers
+	link(href="css/navbar.css" rel="stylesheet")
+block body
+	.navcontainer
+		.menu.d-none-lg.d-sm
+			span.icon-menu
+		.logo
+			img(src="../assets/logos/logo_yard_sale.svg" alt="Yard Sales")
+
+		.menu-d.d-none.d-lg
+			li.btn.btn-menu All
+			li.btn.btn-menu Clothes
+			li.btn.btn-menu Electronics
+			li.btn.btn-menu Fornitiure
+			li.btn.btn-menu Toys
+			li.btn.btn-menu Others
+
+		.user
+			.mail.d-none.d-lg 
+				p user@mail.com
+				span.icon-view
+			.cart
+				span.icon-cart

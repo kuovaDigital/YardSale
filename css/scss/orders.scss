@@ -1,0 +1,48 @@
+@import 'mixin';
+@import 'aux';
+
+body{
+	display: flex;
+	flex-flow: column wrap;
+	width: 100%;
+	padding: 16px;
+	@include md{
+		width: 500px;
+	}
+}
+h1{
+	text-align: left;
+	margin-bottom: 60px;
+}
+.total{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 8px 16px;
+	border-radius: 8px;
+	margin-bottom: 16px;
+	&-fr-1{
+		display: flex;
+		flex-flow: column wrap;
+		align-items: flex-start;
+	}
+	&-articles{
+		font-weight: 300;
+		font-size: $font-sm;
+		color: var(--medium);
+	}
+	&-fecha, &-cost{
+		font-size: $font-md;
+		font-weight: bold;
+	}
+	&-fr-2{
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		.icon-view{
+			display: block;
+			width: 16px;
+			height: 16px;
+		}
+	}
+}

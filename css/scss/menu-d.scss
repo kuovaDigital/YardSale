@@ -1,0 +1,45 @@
+@import '_aux.scss';
+.menu-desk{
+	display: flex;
+	flex-flow: column wrap;
+	align-items: flex-end;
+	justify-content: center;
+	width: 120px;
+	height: auto;
+	background: var(--white);
+	padding: 20px;
+	box-shadow: $box-shadow-sm;
+	border-radius: 12px;
+	ul{
+		margin: 0;
+		padding: 0;
+	}
+	li{
+		list-style: none;
+		font-weight: 700;
+		text-align: right;
+		margin-bottom: 32px;
+		a{
+			color: var(--black);
+			&:hover{
+				color: var(--primary);
+			}
+		}	
+	}
+}
+
+.account, .info{
+	width: 100%;
+}
+
+.info{
+	border-top: 1px solid var(--medium);
+	li{
+	font-size: $font-sm;
+	margin: 0;
+	margin-top: 16px;
+		a{
+			color: var(--primary) !important;
+		}
+	}
+}

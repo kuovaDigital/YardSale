@@ -1,0 +1,36 @@
+@import "aux.scss";
+.card-container{
+	display: flex;
+	flex-flow: column wrap;
+	width: 360px;
+	height: auto;
+	padding-bottom: 32px ;
+	box-shadow: $box-shadow-sm;
+	.card-img{
+		max-width: 100%;
+		overflow: hidden;
+		border-radius: 0 0 32px 32px;
+	}
+	.card-info{
+		display: flex;
+		flex-flow: column wrap;
+		align-items: flex-start;
+		margin-top:20px;
+		padding: 0 16px;
+	
+		&-price{
+	
+		}
+		&-product{
+	
+		}
+		&-description{
+			margin-top: 16px;
+		}
+	}
+	.addcart-btn{
+		margin: 20px auto 0 auto;
+		width: 90%;
+	}
+}
+

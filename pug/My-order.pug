@@ -1,0 +1,19 @@
+extends _template.pug
+block headers
+	link(href="css/order.css" rel="stylesheet")
+block body
+	h1 My order
+	.total
+		.total-fr-1
+			.total-fecha 04-25-2023
+			.total-articles 6 articles
+		.total-fr-2
+			.total-cost $560.00
+
+
+	//- mixin card-order(img, description, price)
+	+card-order('assets/img/frigobar-retro.jpg', 'Round Shelf', '120.00')
+	+card-order('assets/img/frigobar-retro.jpg', 'Round Shelf', '120.00')
+	+card-order('assets/img/frigobar-retro.jpg', 'Round Shelf', '120.00')
+	+card-order('assets/img/frigobar-retro.jpg', 'Round Shelf', '120.00')
+	+card-order('assets/img/frigobar-retro.jpg', 'Round Shelf', '120.00')

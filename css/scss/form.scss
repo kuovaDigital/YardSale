@@ -1,0 +1,40 @@
+@import 'mixin';
+
+form{
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	width: 100%;
+	margin-top: 40px;
+	& label{
+		margin-bottom: 4px;
+	}
+	& input{
+		border: none;
+		background-color: var(--light);
+		margin: 0;
+		margin-bottom: 16px;
+		border-radius: 8px;
+		padding: 8px;
+		height: 24px;
+		& ::placeholder{
+			color: var(--medium);
+		}
+		&[type=submit]{
+			margin-top: 16px;
+		}
+		&:invalid{
+			outline: 1px solid #ce0c0c;
+			background-color: #fffbfb;
+			color: var(--medium);
+		}
+	}
+	& #buscar::before{
+		content: "";
+		margin: 0 auto;
+		height: 100vh;
+		background-color: #ce0c0c;
+		border-radius: 50%;
+		
+	}
+}

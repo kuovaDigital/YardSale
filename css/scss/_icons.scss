@@ -1,0 +1,38 @@
+.i-message{
+    background: url(../assets/icons/email.svg) center no-repeat;
+    background-size: contain;
+}
+
+
+%icon-addcart{
+    background: url(../../assets/icons/icon_shopping_cart.svg) center no-repeat;
+    background-size: contain;
+}
+
+.icon-addcart{
+    @extend %icon-addcart;
+    &-light{
+        @extend %icon-addcart;
+        filter: invert(100%);
+    }
+}
+
+.icon-close{
+    background: url(../../assets/icons/icon_close.png) center no-repeat;
+    background-size: contain;
+}
+
+.icon-view{
+    background: url(../../assets/icons/flechita.svg) center no-repeat;
+    background-size: contain;
+}
+
+.icon-menu{
+    background: url(../../assets/icons/icon_menu.svg) center no-repeat;
+    background-size: contain;
+}
+
+.icon-cart{
+    background: url(../../assets/icons/icon_shopping_cart_notification.svg) center no-repeat;
+    background-size: contain;
+}

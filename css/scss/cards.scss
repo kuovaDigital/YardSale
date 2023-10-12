@@ -1,0 +1,140 @@
+@import 'mixin';
+@import 'aux';
+
+.main-container{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 100%;
+}
+
+.cards-container, {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 16px;
+}
+
+.card-info-container{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.card{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: start;
+    flex-grow: 0;
+    width: 250px;
+    height: 350px;
+    &-wrapper{
+        display: inline-block;
+        width: 250px;
+        height: 250px;
+        overflow: hidden;
+        border-radius: 20px;
+        background-color: red;
+        margin: 0 auto;
+        &-img{
+            max-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+
+        }
+    }
+    &-info{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        &-price{
+            text-align: left;
+            object-fit: cover;
+        }
+        &-price{
+            font-size: $font-md;
+        }
+        &-description{
+            color: var(--medium);
+        }
+    }
+    &-addcart{
+        display: inline-block;
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        box-shadow: 2px 2px 4px var(--primary);
+        @include sm{
+            width: 36px;
+            height: 36px;
+        }
+        @include md{
+            width: 42px;
+            height: 42px;
+        }
+        &-btn{
+            content: "";
+            display: inline-block;
+            min-width: 100%;
+            min-height: 100%;
+            background: url(../assets/icons/bt_add_to_cart.svg) no-repeat center;
+            background-size: cover;
+            cursor: pointer;
+            &:active, &:visited{
+                background: url(../assets/icons/bt_added_to_cart.svg) no-repeat center;
+                transform: all 1s ease-in;
+
+            }
+        }
+    }
+    
+}
+
+@include sm{
+    .card{
+        flex-grow: 0;
+        width: 160px;
+        height: 230px;
+        &-wrapper{
+            width: 160px;
+            height: 160px;
+        }
+    }
+}
+
+
+@include md{
+    .card{
+        width: 200px;
+        height: 280px;
+        &-wrapper{
+            width: 200px;
+            height: 200px;
+        }
+    }
+}
+
+@include lg{
+    .cards-container{
+        max-width: 996px;
+    }
+    .card{
+        flex-grow: 0;
+        width: 220px;
+        height: 320px;
+        &-wrapper{
+            width: 220px;
+            height: 220px;
+        }
+    }
+}
+
+@include xl{
+    .cards-container{
+        max-width: 1200px;
+    }
+}

@@ -1,0 +1,47 @@
+@import '_aux.scss';
+.menu-mobile{
+	display: flex;
+	flex-flow: column wrap;
+	align-items: flex-start;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+	background: var(--white);
+	padding: 24px;
+	p{
+		margin-bottom: 24px;
+	}
+	ul{
+		margin: 0;
+		padding: 16px 0;
+	}
+	li{
+		list-style: none;
+		font-weight: 700;
+		margin-bottom: 20px;
+		a{
+			color: var(--black);
+			&:hover{
+				color: var(--primary);
+			}
+		}	
+	}
+}
+.categories, .account, .info{
+	width: 100%;
+}
+
+.account{
+	padding-top:36px !important;
+	border-top: 1px solid var(--light) ;
+}
+
+.info{
+	li{
+	font-weight: 500;
+	font-size: $font-sm;
+	&:last-child a{
+		color: var(--primary);
+	}
+	}
+}

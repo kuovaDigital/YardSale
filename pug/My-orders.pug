@@ -1,0 +1,11 @@
+extends _template.pug
+block headers
+	link(href="css/orders.css" rel="stylesheet")
+block body
+	h1 My orders
+	//- mixin orders(fecha, NoArt, price)
+	+orders("04-25-2021", "6", "560.00")
+	+orders("04-25-2021", "6", "560.00")
+	+orders("04-25-2021", "6", "560.00")
+	+orders("04-25-2021", "6", "560.00")
+	+orders("04-25-2021", "6", "560.00")

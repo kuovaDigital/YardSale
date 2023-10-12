@@ -1,0 +1,74 @@
+@import 'mixin';
+@import 'aux';
+
+body{
+	display: flex;
+	flex-flow: column wrap;
+	width: 100%;
+	padding: 16px;
+	@include md{
+		width: 500px;
+	}
+}
+h1{
+	text-align: left;
+	margin-bottom: 60px;
+}
+.total{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--light);
+	padding: 8px 16px;
+	border-radius: 8px;
+	margin-bottom: 32px;
+	&-fr-1{
+		display: flex;
+		flex-flow: column wrap;
+		align-items: flex-start;
+	}
+	&-fecha, &-cost{
+		font-size: $font-md;
+		font-weight: bold;
+	}
+	&-articles{
+		font-weight: 300;
+		font-size: $font-sm;
+		color: var(--medium);
+	}
+}
+
+.card-order{
+	&-container{
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		gap: 16px;
+		margin-bottom: 16px;
+	}
+	&-img{
+		width: 100px;
+		height: 100px;
+		overflow: hidden;
+		border-radius: 16px;
+		img{
+			width: 100%;
+			height: auto;
+		}
+	}
+	&-articles{
+		flex-grow: 1;
+		.articles{
+			color: var(--medium);
+		}
+	} 
+	&-price{
+		justify-content:flex-end;
+		.price{
+			text-align: right;
+			padding-right: 16px;
+		}
+	}
+
+}
+
