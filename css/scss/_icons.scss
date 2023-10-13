@@ -20,6 +20,12 @@
 .icon-close{
     background: url(../../assets/icons/icon_close.png) center no-repeat;
     background-size: contain;
+    &-dark{
+        background: url(../../assets/icons/icon_close.png) center no-repeat;
+        background-size: contain;
+        @extend %icon-addcart;
+        filter: invert(100%);
+    }
 }
 
 .icon-view{

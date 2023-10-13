@@ -1,34 +1,164 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap"
-			rel="stylesheet"
-		/>
-		<title>Document</title>
-		<link rel="stylesheet" href="css/styles.css" />
-		<link rel="stylesheet" href="css/form.css" />
-		<link rel="stylesheet" href="css/cards.css" />
-	</head>
-	<body>
-		<div class="container">
-			<form action="" id="form">
-				<input type="text" id="Buscar" class="buscar" placeholder="Buscar">
-			</form>
-			<div class="cards-container">
-				<div class="card">
-					<div class="card-img"></div>
-					<div class="card-price"></div>
-					<div class="card-description"></div>
-					<div class="card-icon"></div>
-				</div>
-			</div>
-			
-	</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yard scale</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="navcontainer">
+        <div class="menu d-none-lg d-sm"><span class="icon-menu open-menu"></span></div>
+        <div class="logo"><img src="../assets/logos/logo_yard_sale.svg" alt="Yard Sales"></div>
+        <div class="menu-d d-none d-lg">
+          <li class="btn btn-menu">All</li>
+          <li class="btn btn-menu">Clothes</li>
+          <li class="btn btn-menu">Electronics</li>
+          <li class="btn btn-menu">Fornitiure</li>
+          <li class="btn btn-menu">Toys</li>
+          <li class="btn btn-menu">Others</li>
+        </div>
+        <div class="user">
+          <div class="nav-mail d-none d-lg">
+            <p>user@mail.com</p><span class="icon-view"></span>
+          </div>
+          <div class="nav-cart"><span class="icon-cart"></span></div>
+        </div>
+      </div>
+      <div class="menu-desk d-none">
+        <ul class="account">
+          <li> <a href="#">My Orders</a></li>
+          <li> <a href="#">My account</a></li>
+        </ul>
+        <ul class="info">
+          <li> <a href="#">Sing Out</a></li>
+        </ul>
+      </div>
+      <div class="menu-mobile d-none"><span class="icon-close close-menu"></span>
+        <p class="title">CATEGORIES</p>
+        <ul class="categories">
+          <li> <a href="#">All</a></li>
+          <li> <a href="#">Clothes</a></li>
+          <li> <a href="#">Electronics</a></li>
+          <li> <a href="#">Furnitures</a></li>
+          <li> <a href="#">Toys</a></li>
+          <li> <a href="#">Other</a></li>
+        </ul>
+        <ul class="account">
+          <li> <a href="#">My Orders</a></li>
+          <li> <a href="#">My account</a></li>
+        </ul>
+        <ul class="info">
+          <li> <a href="#">user@mail.com</a></li>
+          <li> <a href="#">Log Out</a></li>
+        </ul>
+      </div>
+      <section class="main-container">
+        <div class="cards-container">
+          <div class="card">
+            <div class="card-wrapper"><img class="card-wrapper-img" src="assets/img/round-shelf.jpg"/></div>
+            <div class="card-info-container">
+              <div class="card-info">
+                <div class="card-info-price price">$ 120.00</div>
+                <div class="card-info-description h3-body">Round Shelf</div>
+              </div>
+              <div class="card-addcart"><span class="card-addcart-btn"></span></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-wrapper"><img class="card-wrapper-img" src="assets/img/frigobar-retro.png"/></div>
+            <div class="card-info-container">
+              <div class="card-info">
+                <div class="card-info-price price">$ 250.00</div>
+                <div class="card-info-description h3-body">Retro refrigerator</div>
+              </div>
+              <div class="card-addcart"><span class="card-addcart-btn"></span></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-wrapper"><img class="card-wrapper-img" src="assets/img/round-shelf.jpg"/></div>
+            <div class="card-info-container">
+              <div class="card-info">
+                <div class="card-info-price price">$ 120.00</div>
+                <div class="card-info-description h3-body">Round Shelf</div>
+              </div>
+              <div class="card-addcart"><span class="card-addcart-btn"></span></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-wrapper"><img class="card-wrapper-img" src="assets/img/frigobar-retro.png"/></div>
+            <div class="card-info-container">
+              <div class="card-info">
+                <div class="card-info-price price">$ 250.00</div>
+                <div class="card-info-description h3-body">Retro refrigerator</div>
+              </div>
+              <div class="card-addcart"><span class="card-addcart-btn"></span></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-wrapper"><img class="card-wrapper-img" src="assets/img/round-shelf.jpg"/></div>
+            <div class="card-info-container">
+              <div class="card-info">
+                <div class="card-info-price price">$ 120.00</div>
+                <div class="card-info-description h3-body">Round Shelf</div>
+              </div>
+              <div class="card-addcart"><span class="card-addcart-btn"></span></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-wrapper"><img class="card-wrapper-img" src="assets/img/frigobar-retro.png"/></div>
+            <div class="card-info-container">
+              <div class="card-info">
+                <div class="card-info-price price">$ 250.00</div>
+                <div class="card-info-description h3-body">Retro refrigerator</div>
+              </div>
+              <div class="card-addcart"><span class="card-addcart-btn"></span></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-wrapper"><img class="card-wrapper-img" src="assets/img/round-shelf.jpg"/></div>
+            <div class="card-info-container">
+              <div class="card-info">
+                <div class="card-info-price price">$ 120.00</div>
+                <div class="card-info-description h3-body">Round Shelf</div>
+              </div>
+              <div class="card-addcart"><span class="card-addcart-btn"></span></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-wrapper"><img class="card-wrapper-img" src="assets/img/frigobar-retro.png"/></div>
+            <div class="card-info-container">
+              <div class="card-info">
+                <div class="card-info-price price">$ 250.00</div>
+                <div class="card-info-description h3-body">Retro refrigerator</div>
+              </div>
+              <div class="card-addcart"><span class="card-addcart-btn"></span></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-wrapper"><img class="card-wrapper-img" src="assets/img/round-shelf.jpg"/></div>
+            <div class="card-info-container">
+              <div class="card-info">
+                <div class="card-info-price price">$ 120.00</div>
+                <div class="card-info-description h3-body">Round Shelf</div>
+              </div>
+              <div class="card-addcart"><span class="card-addcart-btn"></span></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-wrapper"><img class="card-wrapper-img" src="assets/img/frigobar-retro.png"/></div>
+            <div class="card-info-container">
+              <div class="card-info">
+                <div class="card-info-price price">$ 250.00</div>
+                <div class="card-info-description h3-body">Retro refrigerator</div>
+              </div>
+              <div class="card-addcart"><span class="card-addcart-btn"></span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="js/main.js"></script>
 </html>

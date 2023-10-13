@@ -1,11 +1,12 @@
-@import 'mixin';
 @import 'aux';
+@import 'queries';
 
 .main-container{
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     width: 100%;
+    margin:50px 0px;
 }
 
 .cards-container, {

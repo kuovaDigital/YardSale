@@ -1,15 +1,15 @@
-@import '_aux.scss';
 .menu-desk{
 	display: flex;
-	flex-flow: column wrap;
-	align-items: flex-end;
-	justify-content: center;
-	width: 120px;
+	flex-direction: column;
+	width: 150px;
 	height: auto;
 	background: var(--white);
 	padding: 20px;
 	box-shadow: $box-shadow-sm;
 	border-radius: 12px;
+	float: right;
+	margin-right: 50px;
+	margin-top: -10px;
 	ul{
 		margin: 0;
 		padding: 0;
@@ -19,6 +19,7 @@
 		font-weight: 700;
 		text-align: right;
 		margin-bottom: 32px;
+		cursor: pointer;
 		a{
 			color: var(--black);
 			&:hover{

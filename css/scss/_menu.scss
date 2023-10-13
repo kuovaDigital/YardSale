@@ -1,13 +1,26 @@
-@import '_aux.scss';
 .menu-mobile{
 	display: flex;
 	flex-flow: column wrap;
 	align-items: flex-start;
-	justify-content: center;
 	width: 100%;
 	height: 100vh;
 	background: var(--white);
-	padding: 24px;
+	padding: 80px 16px;
+	box-sizing: border-box;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	span{
+		display: block;
+		width: 20px;
+		height: 20px;
+		object-fit: contain;
+		position: absolute;
+		top: 24px;
+		right: 24px;
+	}
 	p{
 		margin-bottom: 24px;
 	}
