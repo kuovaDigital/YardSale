@@ -525,7 +525,7 @@ button:disabled,
   padding: 80px 16px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  position: fixed;
+  position: fixedcd Y;
   top: 0;
   left: 0;
   right: 0;
