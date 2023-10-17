@@ -1,11 +1,20 @@
 @import 'queries';
 @import 'aux';
 
-body{
+.order-container{
 	display: flex;
 	flex-flow: column wrap;
 	width: 100%;
+	height: auto;
 	padding: 16px;
+	background: var(--white);
+	box-shadow: $box-shadow-sm;
+	box-sizing: border-box;
+	align-self: flex-end;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	top: 58px;
 	@include md{
 		width: 500px;
 	}

@@ -7,9 +7,11 @@
 	padding: 20px;
 	box-shadow: $box-shadow-sm;
 	border-radius: 12px;
-	float: right;
-	margin-right: 50px;
-	margin-top: -10px;
+	position: fixed;
+	z-index:1;
+	align-self: flex-end;
+	margin-top: 46px;
+	margin-right: 56px;
 	ul{
 		margin: 0;
 		padding: 0;
@@ -27,9 +29,13 @@
 			}
 		}	
 	}
+	.account-d{
+		border-top: none;
+		padding-top: 16px;
+	}
 }
 
-.account, .info{
+.account-d, .info{
 	width: 100%;
 }
 

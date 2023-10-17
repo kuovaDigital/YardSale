@@ -4,10 +4,11 @@ mixin card(img, price, product, icon)
 			img.card-wrapper-img(src=img alt=description)&attributes(attributes)
 		.card-info-container
 			.card-info
-				.card-info-price.price='$ '+price
-				.card-info-description.h3-body=product
+				p.card-info-price.price='$ '+price
+				p.card-info-name.h3-body=product
 			.card-addcart
-				span.card-addcart-btn
+				a(href="https://www.google.com" target='_blank')
+					span.card-addcart-btn
 
 mixin card-lg(img, price, product , description)
 	.card-container
@@ -31,6 +32,7 @@ mixin card-order(img, articles, price)
 			p.articles=articles
 		.card-order-price
 			p.price= '$'+ price
+
 mixin orders(fecha, NoArt, price)
 	.total
 		.total-fr-1
