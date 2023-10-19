@@ -10,16 +10,16 @@ mixin card(img, price, product, icon)
 				a(href="https://www.google.com" target='_blank')
 					span.card-addcart-btn
 
-mixin card-lg(img, price, product , description)
-	.card-container
-		.card-closeBtn
-			span.icon.icon-close
-		.card-img
-			img(src=img alt=description)&attributes(attributes)
-		.card-info
-			.card-info-price.price= '$ ' + price
-			.card-info-product.h3-body= product
-			.card-info-description= description	
+mixin sheet(img, price, product , description)
+	aside.sheet-container.d-none
+		figure.sheet-img-wrap
+			.sheet-closeBtn
+				span.icon.icon-round.icon-sm.icon-close
+			img.flex-img.sheet-img(src=img alt=description)&attributes(attributes)
+		.sheet-info
+			.sheet-info-price.price= '$ ' + price
+			.sheet-info-name.h3-body= product
+			.sheet-info-description= description
 
 		button.addcart-btn.btn.btn-lg(type='button') Add to cart
 			span.icon.icon-addcart-light

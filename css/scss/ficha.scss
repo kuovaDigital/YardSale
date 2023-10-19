@@ -1,18 +1,36 @@
 @import "aux.scss";
 
-.card-container{
+.sheet-container{
 	display: flex;
+	align-items: center;
+	justify-content: center;
 	flex-flow: column wrap;
-	width: 360px;
+	background: var(--white);
+	width: 100%;
 	height: auto;
-	padding-bottom: 32px ;
+	box-sizing: border-box;
 	box-shadow: $box-shadow-sm;
-	.card-img{
-		max-width: 100%;
+	position: fixed;
+	top: 56px;
+	z-index: 1;
+	@include md{
+		align-self: flex-end;
+		width: 360px;
+	}
+
+	.sheet-closeBtn{
+		position: absolute;
+		right: 16px;
+		top: 16px;
+	}
+	.sheet-img-wrap{
+		width: 100%;
 		overflow: hidden;
 		border-radius: 0 0 32px 32px;
+		margin: 0;
+		padding: 0;
 	}
-	.card-info{
+	.sheet-info{
 		display: flex;
 		flex-flow: column wrap;
 		align-items: flex-start;
@@ -22,7 +40,7 @@
 		&-price{
 	
 		}
-		&-product{
+		&-name{
 	
 		}
 		&-description{
@@ -30,8 +48,8 @@
 		}
 	}
 	.addcart-btn{
-		margin: 20px auto 0 auto;
-		width: 90%;
+		margin: 16px;
+		margin-bottom: 32px;
 	}
 }
 
