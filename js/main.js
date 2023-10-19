@@ -53,7 +53,8 @@ function closeSheet(){
 function openSheet(){
 	// console.log(this.item.img)
 	sheet.classList.remove('d-none')
-
+	menuDesk.classList.add('d-none')
+	myOrder.classList.add('d-none') 
 }
 
 const prueba = 'Hola Mundo';
